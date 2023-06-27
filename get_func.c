@@ -22,13 +22,13 @@ int (*get_func(char c))(va_list, int)
 		{'\0', NULL}
 	};
 
-	int i = 0;
+	int n = 0;
 
-	while (funcArr[i].placeholder != '\0')
+	while (funcArr[n].placeholder != '\0')
 	{
-		if (funcArr[i].placeholder == c)
-			return (funcArr[i].f);
-		i++;
+		if (funcArr[n].placeholder == c)
+			return (funcArr[n].f);
+		n++;
 	}
 
 	return (NULL);
